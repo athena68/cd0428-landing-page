@@ -2,12 +2,12 @@
 
 
 <!-- Add banner here -->
-
+![my banner](https://i.ibb.co/NFbcCM2/github-banners.png)
 <!-- Add buttons here -->
 
 <!-- Describe your project in brief -->
 
-Landing page with smooth scroll to section and nav link.
+## Landing page with smooth scroll to section and nav link.
 
 <!-- The project title should be self explanotory and try not to make it a mouthful. (Although exceptions exist- **awesome-readme-writing-guide-for-open-source-projects** - would have been a cool name)
 
