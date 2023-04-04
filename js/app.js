@@ -101,16 +101,6 @@ function makeActive() {
 // Build menu
 
 // Scroll to section on link click
-// function onClickedLink(e) {
-//     e.preventDefault();
-//     document.querySelector(e.target.hash).scrollIntoView({
-//         behavior: "smooth",
-//     });
-// };
-
-// for (const navLink of navLinks) {
-//     navLink.addEventListener("click", onClickedLink);
-// }
 
 // Set sections as active
 document.addEventListener("scroll", (e) => {
