@@ -24,7 +24,7 @@
 */
 const navBar   = document.querySelector("#navbar__list");
 const sections = document.querySelectorAll("section");
-const navLinks  = document.querySelectorAll("#navbar__list li a");
+const navLinks = document.querySelectorAll("#navbar__list li a");
 
 /**
  * End Global Variables
@@ -50,6 +50,11 @@ for (const section of sections) {
     anchorLink.classList.add("menu__link");
     navList.appendChild(anchorLink);
     // navFrag.appendChild(navList);
+    navList.addEventListener("click", function(e){
+        e.preventDefault();
+        section.scrollIntoView({behavior: "smooth"})
+
+    });
     navBar.appendChild(navList);
 }
 //--------------- Begin: Try to use Fragment for better performance ---------
@@ -96,16 +101,16 @@ function makeActive() {
 // Build menu
 
 // Scroll to section on link click
-function onClickedLink(e) {
-    e.preventDefault();
-    document.querySelector(e.target.hash).scrollIntoView({
-        behavior: "smooth",
-    });
-};
+// function onClickedLink(e) {
+//     e.preventDefault();
+//     document.querySelector(e.target.hash).scrollIntoView({
+//         behavior: "smooth",
+//     });
+// };
 
-for (const navLink of navLinks) {
-    navLink.addEventListener("click", onClickedLink);
-}
+// for (const navLink of navLinks) {
+//     navLink.addEventListener("click", onClickedLink);
+// }
 
 // Set sections as active
 document.addEventListener("scroll", (e) => {
